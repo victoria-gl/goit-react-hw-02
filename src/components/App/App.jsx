@@ -34,7 +34,7 @@ export const App = () => {
   };
 
   useEffect(() => {
-    window.localStorage.setItem("saved-feedback", JSON.stringify({ feedback }));
+    window.localStorage.setItem("saved-feedback", JSON.stringify(feedback));
   }, [feedback]);
 
   const { good, neutral, bad } = feedback;
